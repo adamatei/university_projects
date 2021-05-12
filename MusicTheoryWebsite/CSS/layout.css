@@ -1,0 +1,58 @@
+*{
+  /*background-color: #fdfffcff;*/
+  color: #011627ff;
+  font-family: : "Josefin Slab";
+  background-image: url("../Image/white.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+header {
+	padding: 20px;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	color: #ff0022ff;
+}
+
+a:active {
+	font-weight: bold;
+}
+
+ul {
+	list-style-type: none;
+}
+
+#text {
+	float: center;
+}
+
+#topnav {
+	border-bottom: 1px solid #011627ff;
+}
+
+h2 {
+	text-align: center;
+	padding: 30px;
+	/*color: #fdfffcff;*/
+	background-color: #5F9EA0;
+}
+
+ul {
+	list-style-type: none;
+}
+
+footer{
+	text-align: center;
+}
+
+/* CSS HEX 
+--rich-black-fogra-29: #011627ff;
+--red-pigment: #ff0022ff;
+--turquoise: #41ead4ff;
+--baby-powder: #fdfffcff;
+--medium-violet-red: #b91372ff; */

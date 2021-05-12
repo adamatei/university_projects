@@ -1,0 +1,16 @@
+@media only screen and (min-width: 650px){
+  .data {
+      display: grid;
+      grid-template-columns: 50% 50%;
+      grid-gap: 10px;
+      padding: 10px;
+    }
+    .guitar{
+      grid-row-start: 1;
+      grid-row-end: 2;
+    }
+    .drums{
+      grid-row-start: 2;
+      grid-row-end: 3;
+    }
+}

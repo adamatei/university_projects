@@ -1,0 +1,62 @@
+
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+body {font-family: Lato, sans-serif;}
+
+
+.subtitle{
+	opacity: 0.5;
+}
+
+
+
+.text{
+	text-align: justify;
+    text-justify: inter-word;
+}
+
+
+.content{
+	padding: 10%;
+	margin-top:46px;
+	text-align: center ;
+}
+
+.extraimg{
+	width:50%;
+	padding : 0px 120px;
+}
+
+.info{
+text-align: right;
+width: 140px;
+display: block;
+margin-left: auto;
+margin-right: auto;
+
+
+}
+
+ h2{
+	font-family: Segoe UI;
+}
+

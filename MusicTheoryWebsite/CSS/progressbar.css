@@ -1,0 +1,14 @@
+.progress{
+	background-color: #161a1d;
+	text-align: center;
+    color: white;
+}
+
+progress{
+	height:50px;
+	width: 90%;
+	-webkit-appearance: none;
+	/*color: #9a8c98;*/
+	background-color : white;
+}
+

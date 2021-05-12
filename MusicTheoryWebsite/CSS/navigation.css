@@ -1,0 +1,16 @@
+*{
+  font-family: : "Josefin Slab";
+}
+
+a {
+	text-decoration: none;
+  color: #011627ff;
+}
+
+a:hover {
+	color: #ff0022ff;
+}
+
+a:active {
+	font-weight: bold;
+}
