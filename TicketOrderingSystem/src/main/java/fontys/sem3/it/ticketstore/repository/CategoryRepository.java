@@ -1,0 +1,7 @@
+package fontys.sem3.it.ticketstore.repository;
+
+import fontys.sem3.it.ticketstore.model.Category;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface CategoryRepository extends JpaRepository<Category, Integer> {
+}
