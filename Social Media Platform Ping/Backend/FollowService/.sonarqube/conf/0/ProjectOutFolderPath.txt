@@ -1,0 +1,1 @@
+C:\Users\ADA\Documents\GitHub\ping-social-media\Backend\FollowService\.sonarqube\out\0

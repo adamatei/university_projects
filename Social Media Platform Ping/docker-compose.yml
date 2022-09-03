@@ -1,0 +1,136 @@
+version: '3.1'
+
+volumes:
+  sqlvolume:
+
+
+services:
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    hostname: sqlserver
+    container_name: sqlserver
+    restart: always
+    ports:
+      - "1433:1433"
+      - "1434:1434"
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=authentication123!
+    volumes:
+      - sqlvolume:/var/opt/mssql
+    networks:
+      - no-internet
+      - internet #database
+
+  front-end:
+    build: Frontend
+    container_name: frontend
+    restart: on-failure
+    networks:
+      - internet
+    stdin_open: true
+    ports:
+      - 3000:3000
+
+  authentication-api:
+    build: Backend/AuthenticationService
+    container_name: authentication-api
+    hostname: authentication-api
+    restart: always
+    ports:
+      - 49613:80
+    depends_on:
+      - sqlserver
+      - rabbitmq
+    networks:
+      - no-internet
+
+  follow-api:
+    build: Backend/FollowService
+    container_name: follow-api
+    hostname: follow-api
+    restart: always
+    ports:
+      - 39766:80
+    depends_on:
+      - sqlserver
+      - rabbitmq
+    networks:
+      - no-internet
+
+  notification-api:
+    build: Backend/NotificationService
+    container_name: notification-api
+    hostname: notification-api
+    restart: always
+    ports:
+      - 9832:80
+    depends_on:
+      - sqlserver
+      - rabbitmq
+    networks:
+      - no-internet
+
+  post-api:
+    build: Backend/PostService
+    container_name: post-api
+    hostname: post-api
+    restart: always
+    ports:
+      - 39744:80
+    depends_on:
+      - sqlserver
+      - rabbitmq
+    networks:
+      - no-internet
+
+  profile-api:
+    build: Backend/ProfileService
+    container_name: profile-api
+    hostname: profile-api
+    restart: always
+    ports:
+      - 28027:80
+    depends_on:
+      - sqlserver
+      - rabbitmq
+    networks:
+      - no-internet
+
+  gateway:
+    build: Backend/ApiGateway
+    container_name: gateway
+    restart: always
+    ports:
+      - 5020:80
+    networks:
+      - no-internet
+      - internet
+    depends_on:
+      - authentication-api
+
+  rabbitmq:
+    image: rabbitmq:3.9-management
+    hostname: rabbitmq
+    container_name: rabbitmq
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    environment:
+      - RABBITMQ_DEFAULT_USER=guest
+      - RABBITMQ_DEFAULT_PASS=guest
+    networks:
+      #- messaging
+      - internet
+      - no-internet
+
+networks:
+  messaging:
+    driver: bridge
+  database:
+    driver: bridge
+  no-internet:
+    driver: bridge
+    internal: true
+  internet:
+    driver: bridge

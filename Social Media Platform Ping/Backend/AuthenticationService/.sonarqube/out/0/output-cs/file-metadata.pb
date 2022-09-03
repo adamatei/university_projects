@@ -1,0 +1,17 @@
+w
+nC:\Users\ADA\Documents\GitHub\ping-social-media\Backend\AuthenticationService\Consumers\BlockUpdateConsumer.csutf-8~
+uC:\Users\ADA\Documents\GitHub\ping-social-media\Backend\AuthenticationService\Controllers\AuthenticationController.csutf-8t
+kC:\Users\ADA\Documents\GitHub\ping-social-media\Backend\AuthenticationService\DataAccess\DatabaseContext.csutf-8~
+uC:\Users\ADA\Documents\GitHub\ping-social-media\Backend\AuthenticationService\Interfaces\IJWTAuthenticationManager.csutf-8q
+hC:\Users\ADA\Documents\GitHub\ping-social-media\Backend\AuthenticationService\Logic\EncodingAlgorithm.csutf-8x
+oC:\Users\ADA\Documents\GitHub\ping-social-media\Backend\AuthenticationService\Logic\JWTAuthenticationManager.csutf-8|
+sC:\Users\ADA\Documents\GitHub\ping-social-media\Backend\AuthenticationService\Migrations\20220304103132_initial2.csutf-8á
+|C:\Users\ADA\Documents\GitHub\ping-social-media\Backend\AuthenticationService\Migrations\20220304103132_initial2.Designer.csutf-8É
+xC:\Users\ADA\Documents\GitHub\ping-social-media\Backend\AuthenticationService\Migrations\DatabaseContextModelSnapshot.csutf-8h
+_C:\Users\ADA\Documents\GitHub\ping-social-media\Backend\AuthenticationService\Models\Account.csutf-8p
+gC:\Users\ADA\Documents\GitHub\ping-social-media\Backend\AuthenticationService\Models\UserCredentials.csutf-8a
+XC:\Users\ADA\Documents\GitHub\ping-social-media\Backend\AuthenticationService\Program.csutf-8a
+XC:\Users\ADA\Documents\GitHub\ping-social-media\Backend\AuthenticationService\Startup.csutf-8ô
+çC:\Users\ADA\Documents\GitHub\ping-social-media\Backend\AuthenticationService\obj\Debug\net5.0\.NETCoreApp,Version=v5.0.AssemblyAttributes.csutf-8ê
+ÑC:\Users\ADA\Documents\GitHub\ping-social-media\Backend\AuthenticationService\obj\Debug\net5.0\AuthenticationService.AssemblyInfo.csutf-8£
+óC:\Users\ADA\Documents\GitHub\ping-social-media\Backend\AuthenticationService\obj\Debug\net5.0\AuthenticationService.MvcApplicationPartsAssemblyInfo.csutf-8

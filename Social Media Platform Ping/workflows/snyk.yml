@@ -1,0 +1,28 @@
+name: Snyk dotNET
+on:
+  workflow_run:
+    workflows:
+      - Node.js CI
+    types:
+      - completed
+env: 
+  working-directory: ./Backend/AuthenticationService
+jobs:
+  security:
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - name: Run Snyk to check for vulnerabilities
+        uses: snyk/actions/dotnet@master        
+        env:
+          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+        with:
+          command: monitor --file=Backend/Backend.sln
+  on-failure:
+    runs-on: ubuntu-latest
+    if: ${{ github.event.workflow_run.conclusion == 'failure' }}
+    steps:
+      - run: echo 'The NodeJs workflow failed'
+
+          

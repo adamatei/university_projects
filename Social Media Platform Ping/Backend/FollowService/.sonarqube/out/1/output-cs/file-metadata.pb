@@ -1,0 +1,15 @@
+n
+eC:\Users\ADA\Documents\GitHub\ping-social-media\Backend\FollowService\Controllers\FollowController.csutf-8l
+cC:\Users\ADA\Documents\GitHub\ping-social-media\Backend\FollowService\DataAccess\DatabaseContext.csutf-8k
+bC:\Users\ADA\Documents\GitHub\ping-social-media\Backend\FollowService\DataAccess\FakeRepository.csutf-8k
+bC:\Users\ADA\Documents\GitHub\ping-social-media\Backend\FollowService\Interfaces\IFollowManager.csutf-8h
+_C:\Users\ADA\Documents\GitHub\ping-social-media\Backend\FollowService\Managers\FollowManager.csutf-8s
+jC:\Users\ADA\Documents\GitHub\ping-social-media\Backend\FollowService\Migrations\20220307101221_initial.csutf-8~
+sC:\Users\ADA\Documents\GitHub\ping-social-media\Backend\FollowService\Migrations\20220307101221_initial.Designer.csutf-8{
+pC:\Users\ADA\Documents\GitHub\ping-social-media\Backend\FollowService\Migrations\DatabaseContextModelSnapshot.csutf-8_
+VC:\Users\ADA\Documents\GitHub\ping-social-media\Backend\FollowService\Models\Follow.csutf-8Y
+PC:\Users\ADA\Documents\GitHub\ping-social-media\Backend\FollowService\Program.csutf-8Y
+PC:\Users\ADA\Documents\GitHub\ping-social-media\Backend\FollowService\Startup.csutf-8‘
+…C:\Users\ADA\Documents\GitHub\ping-social-media\Backend\FollowService\obj\Debug\net5.0\.NETCoreApp,Version=v5.0.AssemblyAttributes.csutf-8
+tC:\Users\ADA\Documents\GitHub\ping-social-media\Backend\FollowService\obj\Debug\net5.0\FollowService.AssemblyInfo.csutf-8“
+‡C:\Users\ADA\Documents\GitHub\ping-social-media\Backend\FollowService\obj\Debug\net5.0\FollowService.MvcApplicationPartsAssemblyInfo.csutf-8

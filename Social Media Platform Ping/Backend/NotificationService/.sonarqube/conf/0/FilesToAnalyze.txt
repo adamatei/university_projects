@@ -1,0 +1,5 @@
+﻿C:\Users\ADA\Documents\GitHub\ping-social-media\Backend\MassTransitModels\BlockUpdate.cs
+C:\Users\ADA\Documents\GitHub\ping-social-media\Backend\MassTransitModels\FollowRequest.cs
+C:\Users\ADA\Documents\GitHub\ping-social-media\Backend\MassTransitModels\Like.cs
+C:\Users\ADA\Documents\GitHub\ping-social-media\Backend\MassTransitModels\MentionNotification.cs
+C:\Users\ADA\Documents\GitHub\ping-social-media\Backend\MassTransitModels\RegistrationUpdate.cs

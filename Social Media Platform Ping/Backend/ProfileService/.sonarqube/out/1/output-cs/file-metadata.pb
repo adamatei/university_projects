@@ -1,0 +1,16 @@
+q
+hC:\Users\ADA\Documents\GitHub\ping-social-media\Backend\ProfileService\Consumers\RegistrationConsumer.csutf-8p
+gC:\Users\ADA\Documents\GitHub\ping-social-media\Backend\ProfileService\Controllers\ProfileController.csutf-8m
+dC:\Users\ADA\Documents\GitHub\ping-social-media\Backend\ProfileService\DataAccess\DatabaseContext.csutf-8l
+cC:\Users\ADA\Documents\GitHub\ping-social-media\Backend\ProfileService\DataAccess\FakeRepository.csutf-8m
+dC:\Users\ADA\Documents\GitHub\ping-social-media\Backend\ProfileService\Interfaces\IProfileManager.csutf-8t
+kC:\Users\ADA\Documents\GitHub\ping-social-media\Backend\ProfileService\Migrations\20220304123531_initial.csutf-8
+tC:\Users\ADA\Documents\GitHub\ping-social-media\Backend\ProfileService\Migrations\20220304123531_initial.Designer.csutf-8|
+qC:\Users\ADA\Documents\GitHub\ping-social-media\Backend\ProfileService\Migrations\DatabaseContextModelSnapshot.csutf-8a
+XC:\Users\ADA\Documents\GitHub\ping-social-media\Backend\ProfileService\Models\Profile.csutf-8Z
+QC:\Users\ADA\Documents\GitHub\ping-social-media\Backend\ProfileService\Program.csutf-8j
+aC:\Users\ADA\Documents\GitHub\ping-social-media\Backend\ProfileService\Services\ProfileManager.csutf-8Z
+QC:\Users\ADA\Documents\GitHub\ping-social-media\Backend\ProfileService\Startup.csutf-8í
+ÜC:\Users\ADA\Documents\GitHub\ping-social-media\Backend\ProfileService\obj\Debug\net5.0\.NETCoreApp,Version=v5.0.AssemblyAttributes.csutf-8Å
+vC:\Users\ADA\Documents\GitHub\ping-social-media\Backend\ProfileService\obj\Debug\net5.0\ProfileService.AssemblyInfo.csutf-8ï
+âC:\Users\ADA\Documents\GitHub\ping-social-media\Backend\ProfileService\obj\Debug\net5.0\ProfileService.MvcApplicationPartsAssemblyInfo.csutf-8

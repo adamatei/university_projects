@@ -1,0 +1,311 @@
+{
+  "ReRoutes": [
+    {
+      "DownstreamPathTemplate": "/api/Authentication/{everything}",
+      "DownstreamScheme": "http",
+      //"UseServiceDiscovery": true,
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "49613"
+        }
+      ],
+      "UpstreamPathTemplate": "/api/Authentication/{everything}",
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Authentication",
+      "DownstreamScheme": "http",
+      //"UseServiceDiscovery": true,
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "49613"
+        }
+      ],
+      "UpstreamPathTemplate": "/api/Authentication",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Profile/{everything}",
+      "DownstreamScheme": "http",
+      //"UseServiceDiscovery": true,
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "profile-api",
+          "Port": "80"
+        }
+      ],
+      "UpstreamPathTemplate": "/api/profile/{everything}",
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Profile",
+      "DownstreamScheme": "http",
+      //"UseServiceDiscovery": true,
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "profile-api",
+          "Port": "80"
+        }
+      ],
+      "UpstreamPathTemplate": "/api/profile",
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Profile/id/{id}",
+      "DownstreamScheme": "http",
+      //"UseServiceDiscovery": true,
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "profile-api",
+          "Port": "80"
+        }
+      ],
+      "UpstreamPathTemplate": "/api/profile/id/{id}",
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Post",
+      "DownstreamScheme": "http",
+      //"UseServiceDiscovery": true,
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "profile-api",
+          "Port": "80"
+        }
+      ],
+      "UpstreamPathTemplate": "/api/post",
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Post/{everything}",
+      "DownstreamScheme": "http",
+      //"UseServiceDiscovery": true,
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "post-api",
+          "Port": "80"
+        }
+      ],
+      "UpstreamPathTemplate": "/api/post/{everything}",
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Post/tag",
+      "DownstreamScheme": "http",
+      //"UseServiceDiscovery": true,
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "post-api",
+          "Port": "80"
+        }
+      ],
+      "UpstreamPathTemplate": "/api/post/tag",
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      },
+      "RouteClaimRequiremet": {
+        "Role": "admin"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Post/likes/{id}",
+      "DownstreamScheme": "http",
+      //"UseServiceDiscovery": true,
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "post-api",
+          "Port": "80"
+        }
+      ],
+      "UpstreamPathTemplate": "/api/post/likes/{id}",
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      },
+      "RouteClaimRequirement": {
+        "Role": "admin"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Post/hashtags/{id}",
+      "DownstreamScheme": "http",
+      //"UseServiceDiscovery": true,
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "post-api",
+          "Port": "80"
+        }
+      ],
+      "UpstreamPathTemplate": "/api/post/hashtags/{id}",
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      },
+      "RouteCLaimRequirement": {
+        "Role": "admin"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Post/id/{id}",
+      "DownstreamScheme": "http",
+      //"UseServiceDiscovery": true,
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "post-api",
+          "Port": "80"
+        }
+      ],
+      "UpstreamPathTemplate": "/api/post/id/{id}",
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Follow",
+      "DownstreamScheme": "http",
+      //"UseServiceDiscovery": true,
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "follow-api",
+          "Port": "80"
+        }
+      ],
+      "UpstreamPathTemplate": "/api/follow",
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Follow/followers/{everything}",
+      "DownstreamScheme": "http",
+      //"UseServiceDiscovery": true,
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "follow-api",
+          "Port": "80"
+        }
+      ],
+      "UpstreamPathTemplate": "/api/follow/followers/{everything}",
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Follow/requests/{username}",
+      "DownstreamScheme": "http",
+      //"UseServiceDiscovery": true,
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "follow-api",
+          "Port": "80"
+        }
+      ],
+      "UpstreamPathTemplate": "/api/follow/requests/{username}",
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Follow/followed/{everything}",
+      "DownstreamScheme": "http",
+      //"UseServiceDiscovery": true,
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "follow-api",
+          "Port": "80"
+        }
+      ],
+      "UpstreamPathTemplate": "/api/follow/followed/{everything}",
+      "UpstreamHttpMethod": [ "GET" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Notification",
+      "DownstreamScheme": "http",
+      //"UseServiceDiscovery": true,
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "9832"
+        }
+      ],
+      "UpstreamPathTemplate": "/api/notification",
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Notification/{everything}",
+      "DownstreamScheme": "http",
+      //"UseServiceDiscovery": true,
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "9832"
+        }
+      ],
+      "UpstreamPathTemplate": "/api/notification/{everything}",
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Notification/id/{id}",
+      "DownstreamScheme": "http",
+      //"UseServiceDiscovery": true,
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "notification-api",
+          "Port": "80"
+        }
+      ],
+      "UpstreamPathTemplate": "/api/notification/id/{id}",
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      }
+    }
+  ]
+}

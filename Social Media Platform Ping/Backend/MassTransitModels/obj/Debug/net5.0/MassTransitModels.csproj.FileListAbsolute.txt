@@ -1,0 +1,12 @@
+C:\Users\ADA\Documents\GitHub\ping-social-media\Backend\MassTransitModels\bin\Debug\net5.0\MassTransitModels.deps.json
+C:\Users\ADA\Documents\GitHub\ping-social-media\Backend\MassTransitModels\bin\Debug\net5.0\MassTransitModels.dll
+C:\Users\ADA\Documents\GitHub\ping-social-media\Backend\MassTransitModels\bin\Debug\net5.0\MassTransitModels.pdb
+C:\Users\ADA\Documents\GitHub\ping-social-media\Backend\MassTransitModels\obj\Debug\net5.0\MassTransitModels.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ADA\Documents\GitHub\ping-social-media\Backend\MassTransitModels\obj\Debug\net5.0\MassTransitModels.AssemblyInfoInputs.cache
+C:\Users\ADA\Documents\GitHub\ping-social-media\Backend\MassTransitModels\obj\Debug\net5.0\MassTransitModels.AssemblyInfo.cs
+C:\Users\ADA\Documents\GitHub\ping-social-media\Backend\MassTransitModels\obj\Debug\net5.0\MassTransitModels.csproj.CoreCompileInputs.cache
+C:\Users\ADA\Documents\GitHub\ping-social-media\Backend\MassTransitModels\obj\Debug\net5.0\MassTransitModels.dll
+C:\Users\ADA\Documents\GitHub\ping-social-media\Backend\MassTransitModels\obj\Debug\net5.0\MassTransitModels.pdb
+C:\Users\ADA\Documents\GitHub\ping-social-media\Backend\MassTransitModels\obj\Debug\net5.0\ref\MassTransitModels.dll
+C:\Users\ADA\Documents\GitHub\ping-social-media\Backend\MassTransitModels\obj\Debug\net5.0\MassTransitModels.csproj.AssemblyReference.cache
+C:\Users\ADA\Documents\GitHub\ping-social-media\Backend\MassTransitModels\obj\Debug\net5.0\refint\MassTransitModels.dll

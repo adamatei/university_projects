@@ -1,0 +1,6 @@
+projectKey=NotificationService
+serverUrl=http://localhost:9000
+serverVersion=8.8.0.42792
+dashboardUrl=http://localhost:9000/dashboard?id=NotificationService
+ceTaskId=AYAXn0_kzYyHzPfcXV6F
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AYAXn0_kzYyHzPfcXV6F
