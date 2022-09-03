@@ -1,0 +1,91 @@
+.container {
+  background: #fff;
+  width: 540px;
+  height: 450px;
+  margin: 0 auto;
+  position: relative;
+  margin-top: 5%;
+  box-shadow: 2px 5px 20px rgba(119, 119, 119, 0.5);
+}
+
+.leftbox {
+  float: left;
+  top: -5%;
+  left: 5%;
+  position: absolute;
+  width: 15%;
+  height: 110%;
+  background: #5850ec;
+  box-shadow: 3px 3px 10px rgba(119, 119, 119, 0.5);
+  border: 0.1em solid #fff;
+}
+
+nav a {
+  list-style: none;
+  padding: 35px;
+  color: #fff;
+  font-size: 1.1em;
+  display: block;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav a:hover {
+  color: #5850ec;
+  cursor: pointer;
+  transform: scaale(1.2);
+}
+
+.rightbox {
+  width: 60%;
+  margin-left: 27%;
+}
+
+.tab {
+  transition: all 0.5s ease-in;
+  width: 80%;
+}
+
+#h1_edit {
+  font-size: 1.2rem;
+  margin-top: 40px;
+  margin-bottom: 35px;
+}
+.h2_edit {
+  color: #777;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  font-size: 8px;
+  letter-spacing: 1px;
+  margin-left: 2px;
+  margin-top: 10px;
+}
+
+.input {
+  border: 0;
+  border-bottom: 1px solid #5850ec;
+  width: 80%;
+  font-family: "montserrat", sans-serif;
+  font-size: 0.7rem;
+  padding: 7px 0;
+  color: #070707;
+  outline: none;
+  text-align: left;
+}
+
+span {
+  font-size: 0.7rem;
+  color: #777;
+}
+
+.tabShow button {
+  font-family: "roboto", sans-serif;
+  text-transform: uppercase;
+  font-size: 15px;
+  border: 0;
+  color: #fff;
+  background: #5850ec;
+  padding: 7px 15px;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  margin-top: 15px;
+}

@@ -1,0 +1,9 @@
+.containerEdit {
+  background: #fff;
+  width: 70vw;
+  height: auto;
+  padding: 10px;
+  position: relative;
+  margin-top: 20px;
+  box-shadow: 2px 5px 20px rgba(119, 119, 119, 0.5);
+}

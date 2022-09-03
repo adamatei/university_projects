@@ -1,0 +1,46 @@
+.data-main-content main {
+    background: #f1f5f9;
+    justify-content: center;
+    display: flex;
+}
+
+.data-list-container {
+    background-color: #fff;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+    min-width: 60%;
+    padding-left: 2.5rem;
+    padding-top: 2.5rem;
+}
+
+.detail-panel-container {
+    height: calc(100vh - 70px);
+    width: 100vw;
+    background-color: rgb(132 132 130 /  50%);
+    position: absolute;
+    z-index: 10;
+    justify-content: center;
+    display: flex;
+    padding: 5rem;
+}
+
+.detail-panel {
+    background-color: #fff;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+    min-width: 50%;
+    padding-left: 2.5rem;
+    padding-top: 2.5rem;
+    position: relative;
+}
+
+.detail-panel-button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.detail-panel td {
+    min-width: 9rem;
+}

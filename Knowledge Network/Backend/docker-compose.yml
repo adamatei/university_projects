@@ -1,0 +1,89 @@
+version: "3.1"
+
+services:
+  db:
+    image: mysql
+    restart: always
+    networks:
+      - no-internet
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: flooid
+    expose:
+      - 3306
+    volumes:
+      - ./mysqluserdata:/var/lib/mysql
+
+  front-end:
+    build: ../flooid-front-end
+    restart: on-failure
+    networks:
+      - internet
+    stdin_open: true
+    ports:
+      - 80:80
+
+  user-api:
+    build: ./UserAPI
+    restart: always
+    networks:
+      - no-internet
+    command: python manage.py runserver 0.0.0.0:8000
+    ports:
+      - 8000:8000
+    depends_on:
+      - db
+
+  gateway:
+    build: ./APIGateway
+    restart: always
+    ports:
+      - 5000:5000
+    networks:
+      - no-internet
+      - internet
+  
+  graph-api:
+    build: ./neo4jAPI
+    restart: always
+    ports:
+      - 5001:5001
+    networks:
+      - no-internet
+    depends_on:
+      - graph-db
+
+  #adminer to view the containerized database
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8080:8080
+    networks:
+      - no-internet
+      - internet
+
+  graph-db:
+    container_name: graph-db
+    image: neo4j:4.4.3-enterprise
+    ports:
+      - 7474:7474
+      - 7687:7687
+    networks:
+      - no-internet
+    volumes:
+      - ./neo4j/data:/data
+      - ./neo4j/logs:/var/lib/neo4j/logs
+      - ./neo4j/conf:/var/lib/neo4j/conf
+      - ./neo4j/import:/var/lib/neo4j/import
+    environment:
+      - NEO4J_ACCEPT_LICENSE_AGREEMENT=yes
+      - NEO4J_AUTH=neo4j/test
+
+
+networks:
+  no-internet:
+    driver: bridge
+    internal: true
+  internet:
+    driver: bridge

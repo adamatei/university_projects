@@ -1,0 +1,48 @@
+.login-main-content {
+  overflow: hidden;
+}
+
+.register-main-content main {
+  background: #f1f5f9;
+  min-height: calc(100vh - 70px);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.register-form {
+  width: 23%;
+  height: 25%;
+  min-width: 15rem;
+  background-color: #fff;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+  padding-bottom: 0.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 2.5rem;
+}
+.register-form-header {
+  margin-bottom: 1.5rem;
+}
+.register-form-footer {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+.register-form-footer small {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+.register-form-button {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+}
+.register-form-textbox-row {
+  margin-top: 0.5rem;
+}
+.register-form-warning-container {
+  min-height: 1.5rem;
+}
+.register-form-warning {
+  color: red;
+}

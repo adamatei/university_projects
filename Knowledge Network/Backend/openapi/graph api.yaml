@@ -1,0 +1,202 @@
+swagger: '2.0'
+info:
+  title: Pink Flooid neo4j API
+  version: v1
+host: 127.0.0.1:5001
+schemes:
+  - http
+basePath: /v1
+consumes:
+  - application/json
+produces:
+  - application/json
+securityDefinitions:
+  Basic:
+    type: basic
+security:
+  - Basic: []
+paths:
+  /graphs/relationships/:
+    get:
+      description: ''
+      parameters: []
+      responses:
+        '200':
+          description: ''
+          schema:
+            type: object
+            properties:
+              results:
+                type: array
+                items:
+                  $ref: '#/definitions/NodeRelationship'
+      tags:
+        - relationships
+  /graphs/relationships/types/:
+    get:
+      description: ''
+      parameters: []
+      responses:
+        '200':
+          description: ''
+          schema:
+            type: array
+            items:
+              type: string
+              example: LINKS, BELONGS_TO
+      tags:
+        - relationships
+  /graphs/nodes/:
+    get:
+      description: ''
+      responses:
+        '200':
+          description: ''
+          schema:
+            $ref: '#/definitions/NodeResults'
+      tags:
+        - nodes
+    post:
+      parameters:
+        - in: body
+          name: data
+          schema:
+            $ref: '#/definitions/NodeCreate'
+      responses:
+        '200':
+          description: ''
+          schema:
+            $ref: '#/definitions/NodeCreateResults'
+      tags:
+        - nodes
+    put:
+      description: ''
+      parameters:
+        - in: body
+          name: data
+          schema:
+            $ref: '#/definitions/NodeUpdate'
+      responses:
+        '200':
+          description: ''
+          schema:
+            $ref: '#/definitions/NodeResults'
+      tags:
+        - nodes
+    delete:
+      description: ''
+      parameters: 
+        - name: data
+          in: body
+          schema:
+            type: object
+            properties:
+              id:
+                type: integer
+      responses:
+        '200':
+          description: ''
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/Node'
+      tags:
+        - nodes
+  /graphs/nodes/{nodeName}:
+    get:
+      parameters:
+        - in: path
+          name: nodeName
+          type: string
+          required: true
+      responses:
+        '200':
+          description: ''
+          schema:
+            $ref: '#/definitions/NodeResults'
+      tags:
+        - nodes
+definitions:
+  NodeCreate:
+    required:
+      - data
+    type: object
+    properties:
+      data:
+        title: data
+        type: string
+      relationships:
+        title: relationships
+        type: array
+        items:
+            type: object
+            properties:
+              related_data_name:
+                type: string
+  NodeCreateResults:
+    type: object
+    properties:
+      results:
+        type: array
+        items:
+          $ref: '#/definitions/NodeCreate'
+  NodeResults:
+    type: object
+    properties:
+      results: 
+        type: array
+        items: 
+          $ref: '#/definitions/Node'
+  Node:
+    required:
+      - node_id
+      - name
+      - labels
+    type: object
+    properties:
+      node_id:
+        title: node_id
+        type: integer
+      name:
+        title: name
+        type: string
+      labels:
+        title: Lables
+        type: array
+        items: 
+          type: string
+  NodeUpdate:
+    required:
+      - id
+      - name
+      - labels
+    type: object
+    properties:
+      id:
+        title: id
+        type: integer
+      name:
+        title: name
+        type: string
+      labels:
+        title: Lables
+        type: array
+        items: 
+          type: string
+  NodeRelationship:
+    required:
+      - first_node
+      - second_node
+      - type
+    type: object
+    properties:
+      first_node:
+        title: first_node
+        type: string
+      second_node:
+        title: second_node
+        type: string
+      type:
+        title: type
+        type: string
+ 

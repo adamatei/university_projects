@@ -1,0 +1,1 @@
+The yaml api spec can be viewed on an online ui from websites like https://editor.swagger.io/ or a Visual Studio Code extension such as Swagger Viewer
